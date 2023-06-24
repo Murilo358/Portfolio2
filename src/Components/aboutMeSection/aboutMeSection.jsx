@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutMeSection.scss";
+import "./aboutMeSection.scss";
 
 import Me from "../../assets/Me.png";
 
