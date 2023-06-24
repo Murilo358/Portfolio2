@@ -1,0 +1,51 @@
+.cards-swiper {
+  width: 100%;
+
+  background-color: transparent !important;
+  font-size: 150px;
+}
+.mainAbilities-section__swiper {
+}
+
+.mainAbilities-section-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  color: #eddea4;
+  justify-content: start;
+  background-color: #23311e;
+}
+
+.mainAbilities-section-container h1 {
+  margin: 150px 0 150px 0px;
+  font-size: 50px;
+  font-family: var(--plus-jakarta-sans);
+  text-align: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+
+.react-icon {
+  color: #2970f5;
+}
+.html-icon {
+  color: orangered;
+}
+.bootstrap-icon {
+  color: purple;
+}
+.cPlusPlus-icon {
+  color: #3d0891;
+}
+
+.css-icon {
+  color: #2970f5;
+}
+.javascript-icon {
+  color: yellow;
+}

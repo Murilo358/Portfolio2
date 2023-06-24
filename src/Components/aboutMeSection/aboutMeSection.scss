@@ -1,0 +1,22 @@
+.aboutme-section-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.aboutme-section-content {
+  display: flex;
+  align-items: center;
+
+  gap: 50px;
+  justify-content: center;
+  font-family: var(--playfair-display);
+  color: var(--color-creamson);
+}
+.fp-overflow {
+  width: 90%;
+}
+.aboutme-section-description {
+  font-size: 22px;
+  width: 500px;
+}

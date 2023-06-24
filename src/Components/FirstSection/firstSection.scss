@@ -1,0 +1,25 @@
+.first-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section__h1 {
+  color: var(--black-300);
+  font-size: 130px;
+  line-height: 80px;
+  font-family: var(--playfair-display);
+}
+
+.first-section__h5 {
+  margin-top: 50px;
+  color: var(--black-300);
+  font-size: 50px;
+  font-family: var(--playfair-display);
+}
+
+//Mobile
+// .first-section__h1{
+// font-size: 4em;
+// line-height: 50px;
+// }
