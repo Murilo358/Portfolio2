@@ -1,0 +1,66 @@
+#my-nav {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  display: flex;
+
+  flex-direction: column;
+  left: 97%;
+  gap: 20px;
+  opacity: 1;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translate3d(0, -50%, 0);
+}
+
+#my-nav li {
+  width: 20px;
+  font-size: 25px;
+  display: block;
+  color: var(--black-300);
+  cursor: pointer;
+  animation: fadeIn 0.3s ease-in both;
+}
+#my-nav li.active {
+  color: var(--black-200);
+}
+
+#my-nav li:hover {
+  color: var(--black-500);
+  scale: 1.1;
+}
+
+#my-nav li:nth-child(4) {
+  animation-delay: 0.1s;
+}
+#my-nav li:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#my-nav li:nth-child(2) {
+  animation-delay: 0.3s;
+}
+#my-nav li:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 880px) {
+  #my-nav {
+    left: 94%;
+  }
+}
+@media (max-width: 460px) {
+  #my-nav {
+    left: 90%;
+  }
+}

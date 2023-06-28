@@ -1,23 +1,43 @@
-.cards-swiper {
-  width: 100%;
+.mainAbilities-section-container__content {
+  display: flex;
+  justify-content: center;
 
-  background-color: transparent !important;
+  align-items: center;
   font-size: 150px;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 80%;
 }
-.mainAbilities-section__swiper {
+
+.mainAbilities-section-container__align {
+  display: flex;
+  min-height: 90%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.mainAbilities-section__icon:hover {
+  scale: 1.2;
+  transition: 0.3s;
+}
+.mainAbilities-section__icon {
+  margin-top: 20px;
+  padding: 10px;
 }
 
 .mainAbilities-section-container {
   display: flex;
   height: 100vh;
   align-items: center;
-  color: #eddea4;
-  justify-content: start;
-  background-color: #23311e;
+  color: var(--black-300);
+
+  .fp-overflow {
+    height: 100vh;
+  }
 }
 
 .mainAbilities-section-container h1 {
-  margin: 150px 0 150px 0px;
+  margin-top: 20px;
   font-size: 50px;
   font-family: var(--plus-jakarta-sans);
   text-align: center;
@@ -30,22 +50,9 @@
   transition-timing-function: linear !important;
 }
 
-.react-icon {
-  color: #2970f5;
-}
-.html-icon {
-  color: orangered;
-}
-.bootstrap-icon {
-  color: purple;
-}
-.cPlusPlus-icon {
-  color: #3d0891;
-}
-
-.css-icon {
-  color: #2970f5;
-}
-.javascript-icon {
-  color: yellow;
+@media (max-width: 500px) {
+  .mainAbilities-section-container__content {
+    font-size: 90px;
+    padding: 70px 0 70px 0;
+  }
 }

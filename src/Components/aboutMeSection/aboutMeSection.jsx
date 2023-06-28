@@ -1,8 +1,8 @@
 import React from "react";
 import "./aboutMeSection.scss";
 
-import Me from "../../assets/Me.png";
-
+import Me2 from "../../assets/Me2.png";
+import { TfiDownload } from "react-icons/tfi";
 const aboutMeSection = () => {
   return (
     <div className="section aboutme-section-container">
@@ -11,7 +11,7 @@ const aboutMeSection = () => {
           className="aboutme-section-content__image"
           data-aos="fade-right"
           data-aos-duration="800"
-          src={Me}
+          src={Me2}
           alt=""
         />
         <div
@@ -22,13 +22,19 @@ const aboutMeSection = () => {
           <h1>Sobre mim</h1>
           <p>
             Hello world!
-            <br /> Sempre fui apaixonado por tudo que envolvesse técnologia. E
-            após realizar o curso de manutenção e suporte em informatica da ETEC
-            rapidamente descobri que programar seria a carreira que iria seguir.
-            Atualmente estou cursando na universidade São Francisco o curso de
-            análise e desenvolvimento de sistemas, e também realizando o curso
-            de full stack da plataforma One Bit Code
+            <br /> Desde sempre, tenho sido apaixonado por tudo o que envolve
+            tecnologia. A minha paixão se intensificou após concluir o curso de
+            manutenção e suporte em informática na ETEC, quando percebi que a
+            programação seria o meu caminho profissional. Atualmente, estou
+            cursando análise e desenvolvimento de sistemas na Universidade São
+            Francisco e também me aprimorando por meio do curso de full stack
+            oferecido pela plataforma One Bit Code.
           </p>
+          <a href={Me2} download>
+            <button>
+              Currículo <TfiDownload />
+            </button>
+          </a>
         </div>
       </div>
     </div>

@@ -38,3 +38,12 @@
 #fp-nav ul li a span {
   background-color: var(--black-200);
 }
+
+.fp-overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.fp-overflow {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

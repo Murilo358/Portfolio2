@@ -1,22 +1,65 @@
 .aboutme-section-container {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
 }
 .aboutme-section-content {
   display: flex;
   align-items: center;
-
+  flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  font-family: var(--playfair-display);
+  font-family: var(--plus-jakarta-sans);
   color: var(--color-creamson);
+  button {
+    cursor: pointer;
+    border: 3px solid var(--color-creamson);
+    background-color: transparent;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: var(--color-creamson);
+  }
+  button:hover {
+    scale: 1.1;
+    color: #fff;
+    transition: 0.3s;
+  }
 }
+
 .fp-overflow {
   width: 90%;
 }
 .aboutme-section-description {
   font-size: 22px;
-  width: 500px;
+  width: 700px;
+}
+
+.aboutme-section-content__image {
+  animation: profile_animate 8s ease-in-out infinite 1s;
+  box-shadow: 0 5px 10px #000;
+  height: 50%;
+}
+
+@keyframes profile_animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutme-section-content__image {
+    height: auto;
+    width: 100%;
+  }
+
+  .aboutme-section-content {
+    padding: 70px 0 70px 0;
+  }
 }

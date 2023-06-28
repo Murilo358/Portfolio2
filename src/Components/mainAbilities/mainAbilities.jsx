@@ -1,6 +1,3 @@
-import React from "react";
-import { SwiperSlide } from "swiper/react";
-import MySwiper from "../MySwiper";
 import "./mainAbilities.scss";
 import {
   SiReact,
@@ -10,36 +7,32 @@ import {
   SiBootstrap,
   SiJavascript,
   SiCplusplus,
+  SiFirebase,
+  SiGit,
+  SiSass,
+  SiVite,
 } from "react-icons/si";
 
 const mainAbilities = () => {
   return (
     <div className="section  mainAbilities-section-container">
-      <h1>PRINCIPAIS HABILIDADES</h1>
-      <div className="mainAbilities-section__swiper">
-        <MySwiper>
-          <SwiperSlide>
-            <SiReact className="react-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiHtml5 className="html-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiCss3 className="css-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiMysql className="sql-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiBootstrap className="bootstrap-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiJavascript className="javascript-icon" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <SiCplusplus className="cPlusPlus-icon" />
-          </SwiperSlide>
-        </MySwiper>
+      <h1> HABILIDADES</h1>
+      <div className="mainAbilities-section-container__align">
+        <div className="mainAbilities-section-container__content">
+          <SiHtml5 />
+
+          <SiCss3 />
+
+          <SiJavascript />
+          <SiReact />
+          <SiBootstrap />
+          <SiSass />
+          <SiMysql />
+          <SiFirebase />
+          <SiCplusplus />
+          <SiGit />
+          <SiVite />
+        </div>
       </div>
     </div>
   );

@@ -4,10 +4,26 @@
   align-items: center;
 }
 
+.first-section__socialmedia-icons a {
+  color: var(--black-300);
+}
+.first-section__socialmedia-icons a:hover {
+  color: var(--black-500);
+}
+
+.first-section__socialmedia-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+  left: 95%;
+  text-decoration: none;
+}
+
 .first-section__h1 {
   color: var(--black-300);
+  flex-wrap: wrap;
   font-size: 130px;
-  line-height: 80px;
+  line-height: 100px;
   font-family: var(--playfair-display);
 }
 
@@ -18,8 +34,17 @@
   font-family: var(--playfair-display);
 }
 
-//Mobile
-// .first-section__h1{
-// font-size: 4em;
-// line-height: 50px;
-// }
+@media (max-width: 750px) {
+  //Mobile
+  .first-section__h1 {
+    font-size: 4em;
+
+    line-height: 50px;
+  }
+
+  .first-section__h5 {
+    font-size: 2em;
+
+    line-height: 50px;
+  }
+}
