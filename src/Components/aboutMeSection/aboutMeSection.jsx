@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutMeSection.scss";
-
+import Curriculo from "/Curriculo.pdf";
 import Me2 from "../../assets/Me2.png";
 import { TfiDownload } from "react-icons/tfi";
 const aboutMeSection = () => {
@@ -30,7 +30,7 @@ const aboutMeSection = () => {
             Francisco e também me aprimorando por meio do curso de full stack
             oferecido pela plataforma One Bit Code.
           </p>
-          <a href={Me2} download>
+          <a href={Curriculo} download>
             <button>
               Currículo <TfiDownload />
             </button>
