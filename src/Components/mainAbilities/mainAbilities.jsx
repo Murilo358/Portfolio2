@@ -11,6 +11,9 @@ import {
   SiGit,
   SiSass,
   SiVite,
+  SiPhp,
+  SiLaravel,
+  SiPostgresql,
 } from "react-icons/si";
 
 const mainAbilities = () => {
@@ -20,9 +23,7 @@ const mainAbilities = () => {
       <div className="mainAbilities-section-container__align">
         <div className="mainAbilities-section-container__content">
           <SiHtml5 />
-
           <SiCss3 />
-
           <SiJavascript />
           <SiReact />
           <SiBootstrap />
@@ -32,6 +33,9 @@ const mainAbilities = () => {
           <SiCplusplus />
           <SiGit />
           <SiVite />
+          <SiPhp />
+          <SiLaravel />
+          <SiPostgresql />
         </div>
       </div>
     </div>

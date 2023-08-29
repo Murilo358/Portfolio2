@@ -26,7 +26,7 @@ function FirstSection() {
         data-aos-duration="1100"
         className="first-section__h5"
       >
-        SOU UM DESENVOLVEDOR <br /> FRONT END JÚNIOR
+        SOU UM DESENVOLVEDOR WEB
       </h5>
       <div className="first-section__socialmedia-icons">
         <a

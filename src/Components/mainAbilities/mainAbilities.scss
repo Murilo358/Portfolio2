@@ -1,7 +1,6 @@
 .mainAbilities-section-container__content {
   display: flex;
   justify-content: center;
-
   align-items: center;
   font-size: 150px;
   flex-wrap: wrap;
@@ -52,7 +51,12 @@
 
 @media (max-width: 500px) {
   .mainAbilities-section-container__content {
-    font-size: 90px;
+    font-size: 75px;
     padding: 70px 0 70px 0;
+  }
+  .mainAbilities-section-container {
+    h1 {
+      font-size: 45px;
+    }
   }
 }
