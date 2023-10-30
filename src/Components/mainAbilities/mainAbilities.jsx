@@ -6,15 +6,15 @@ import {
   SiMysql,
   SiBootstrap,
   SiJavascript,
-  SiCplusplus,
-  SiFirebase,
   SiGit,
   SiSass,
   SiVite,
   SiPhp,
   SiLaravel,
   SiPostgresql,
+  SiSpring,
 } from "react-icons/si";
+import { DiJava } from "react-icons/di";
 
 const mainAbilities = () => {
   return (
@@ -24,18 +24,18 @@ const mainAbilities = () => {
         <div className="mainAbilities-section-container__content">
           <SiHtml5 />
           <SiCss3 />
+          <SiSass />
+          <SiBootstrap />
           <SiJavascript />
           <SiReact />
-          <SiBootstrap />
-          <SiSass />
-          <SiMysql />
-          <SiFirebase />
-          <SiCplusplus />
-          <SiGit />
           <SiVite />
+          <DiJava />
+          <SiSpring />
+          <SiMysql />
+          <SiPostgresql />
+          <SiGit />
           <SiPhp />
           <SiLaravel />
-          <SiPostgresql />
         </div>
       </div>
     </div>

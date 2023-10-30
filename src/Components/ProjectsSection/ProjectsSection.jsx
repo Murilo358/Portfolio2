@@ -1,19 +1,22 @@
 import WorldMovies from "../../assets/WorldMovies.png";
 import TaskMaster from "../../assets/TaskMaster.png";
 import Weather from "../../assets/Weather.png";
-import Japanese from "../../assets/Japanese.png";
+import Dream from "../../assets/Dream-stay.png";
 
 import "./ProjectsSection.scss";
 import {
   SiReact,
   SiHtml5,
   SiCss3,
-  SiMysql,
   SiBootstrap,
   SiJavascript,
-  SiCplusplus,
   SiFirebase,
   SiGit,
+  SiTypescript,
+  SiTailwindcss,
+  SiPrisma,
+  SiNextdotjs,
+  SiSupabase,
 } from "react-icons/si";
 
 const ProjectsSection = () => {
@@ -52,10 +55,15 @@ const ProjectsSection = () => {
               de filmes.
             </p>
             <div className="projects-section-content-project__description-buttons">
-              <a target="_blank" href="https://worldmovies-gamma.vercel.app">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://worldmovies-gamma.vercel.app"
+              >
                 <button>Demo</button>
               </a>
               <a
+                rel="noreferrer"
                 target="_blank"
                 href="https://github.com/Murilo358/WorldMovies"
               >
@@ -92,10 +100,18 @@ const ProjectsSection = () => {
               organização ainda mais eficiente.
             </p>
             <div className="projects-section-content-project__description-buttons">
-              <a href="https://todolist-murilo358.vercel.app/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://todolist-murilo358.vercel.app/"
+                target="_blank"
+              >
                 <button>Demo</button>
               </a>
-              <a href="https://github.com/Murilo358/todolist" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://github.com/Murilo358/todolist"
+                target="_blank"
+              >
                 <button>Repositório</button>
               </a>
             </div>
@@ -106,12 +122,57 @@ const ProjectsSection = () => {
             alt=""
           />
         </div>
+
         <div className="projects-section-content-project">
           <img
             className="projects-section-content-project__image"
-            src={Weather}
+            src={Dream}
             alt=""
           />
+          <div
+            className="projects-section-content-project__description "
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h1>Dream stay</h1>
+            <h4>Técnologias usadas</h4>
+            <div className="projects-section-content-project__description-icons">
+              <SiHtml5 />
+              <SiCss3 />
+              <SiReact />
+              <SiTypescript />
+              <SiTailwindcss />
+              <SiPrisma />
+              <SiSupabase />
+              <SiNextdotjs />
+              <SiGit className="projects-section-content-project__description-icon" />
+            </div>
+            <p>
+              O DreamStay é um website de viagens desenvolvido com a tecnologia
+              Next.js e conectado a um banco de dados Supabase que utiliza
+              PostgreSQL. Aqui, você pode comprar pacotes de viagem prontos,
+              pesquisar por destinos e até mesmo criar a sua própria viagem de
+              maneira simples e descomplicada.
+            </p>
+            <div className="projects-section-content-project__description-buttons">
+              <a
+                rel="noreferrer"
+                href="https://dream-stay.vercel.app"
+                target="_blank"
+              >
+                <button disabled>Demo</button>
+              </a>
+              <a
+                rel="noreferrer"
+                href="https://github.com/Murilo358/DreamStay"
+                target="_blank"
+              >
+                <button disabled>Repositório</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="projects-section-content-project">
           <div
             className="projects-section-content-project__description "
             data-aos="fade-right"
@@ -133,45 +194,25 @@ const ProjectsSection = () => {
               .
             </p>
             <div className="projects-section-content-project__description-buttons">
-              <a target="_blank" href="https://murilo358.github.io/Weather/">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://murilo358.github.io/Weather/"
+              >
                 <button>Demo</button>
               </a>
-              <a target="_blank" href="https://github.com/Murilo358/Weather">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/Murilo358/Weather"
+              >
                 <button>Repositório</button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="projects-section-content-project">
-          <div
-            className="projects-section-content-project__description "
-            data-aos="fade-right"
-            data-aos-duration="800"
-          >
-            <h1>Japanese Food</h1>
-            <h4>Técnologias usadas</h4>
-            <div className="projects-section-content-project__description-icons">
-              <SiHtml5 />
-              <SiCss3 />
-              <SiJavascript />
-              <SiReact />
-
-              <SiGit className="projects-section-content-project__description-icon" />
-            </div>
-            <p> Em desenvolvimento...</p>
-            <div className="projects-section-content-project__description-buttons">
-              <a href="" target="_blank">
-                <button disabled>Demo</button>
-              </a>
-              <a href="" target="_blank">
-                <button disabled>Repositório</button>
               </a>
             </div>
           </div>
           <img
             className="projects-section-content-project__image"
-            src={Japanese}
+            src={Weather}
             alt=""
           />
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import AOS from "aos";
 import $ from "jquery";

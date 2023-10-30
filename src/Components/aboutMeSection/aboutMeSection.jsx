@@ -1,4 +1,3 @@
-import React from "react";
 import "./aboutMeSection.scss";
 import Curriculo from "/Curriculo.pdf";
 import Me2 from "../../assets/Me2.png";
@@ -22,13 +21,14 @@ const aboutMeSection = () => {
           <h1>Sobre mim</h1>
           <p>
             Hello world!
-            <br /> Desde sempre, tenho sido apaixonado por tudo o que envolve
-            tecnologia. A minha paixão se intensificou após concluir o curso de
-            manutenção e suporte em informática na ETEC, quando percebi que a
-            programação seria o meu caminho profissional. Atualmente, estou
-            cursando análise e desenvolvimento de sistemas na Universidade São
-            Francisco e também me aprimorando por meio do curso de full stack
-            oferecido pela plataforma One Bit Code.
+            <br />
+            Sou um desenvolvedor full stack com experiência em Java, Javascript
+            e PHP, incluindo conhecimentos em PostgreSQL, Laravel, Spring Boot e
+            React. Atualmente, estou cursando Análise e Desenvolvimento de
+            Sistemas na Universidade São Francisco. Estou constantemente
+            aprimorando minhas habilidades e explorando novos desafios. Se
+            quiser conhecer meus projetos ou discutir oportunidades de
+            colaboração, fique à vontade para entrar em contato!
           </p>
           <a href={Curriculo} download>
             <button>

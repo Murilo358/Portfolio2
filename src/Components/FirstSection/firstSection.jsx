@@ -1,4 +1,3 @@
-import React from "react";
 import "./firstSection.scss";
 import { FaWhatsapp } from "react-icons/fa";
 import { ImGithub, ImLinkedin } from "react-icons/im";
@@ -26,10 +25,11 @@ function FirstSection() {
         data-aos-duration="1100"
         className="first-section__h5"
       >
-        SOU UM DESENVOLVEDOR WEB
+        SOU UM DESENVOLVEDOR FULL STACK
       </h5>
       <div className="first-section__socialmedia-icons">
         <a
+          rel="noreferrer"
           href="https://github.com/Murilo358"
           target="_blank"
           data-aos="fade-right"
@@ -38,6 +38,7 @@ function FirstSection() {
           <ImGithub />
         </a>
         <a
+          rel="noreferrer"
           href="https://www.linkedin.com/in/murilo-barbosa-da-cunha-6297ba1b6/"
           target="_blank"
           data-aos="fade-right"
@@ -46,6 +47,7 @@ function FirstSection() {
           <ImLinkedin />
         </a>
         <a
+          rel="noreferrer"
           href="https://wa.me//5511995329951?text=Olá%20Murilo"
           target="_blank"
           data-aos="fade-right"
