@@ -1,6 +1,6 @@
 import "./aboutMeSection.scss";
 import Curriculo from "/Curriculo.pdf";
-import Me2 from "../../assets/Me2.png";
+import pic1 from "../../assets/pic01.png";
 import { TfiDownload } from "react-icons/tfi";
 const aboutMeSection = () => {
   return (
@@ -10,7 +10,7 @@ const aboutMeSection = () => {
           className="aboutme-section-content__image"
           data-aos="fade-right"
           data-aos-duration="800"
-          src={Me2}
+          src={pic1}
           alt=""
         />
         <div
