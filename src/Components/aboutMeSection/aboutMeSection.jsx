@@ -26,7 +26,7 @@ const aboutMeSection = () => {
             e PHP, incluindo conhecimentos em PostgreSQL, Laravel, Spring Boot e
             React. Atualmente, estou cursando Análise e Desenvolvimento de
             Sistemas na Universidade São Francisco e empregado na Sentry
-            (Plataforma SaaS de Gestão para Segurança Pública) §onde estou
+            (Plataforma SaaS de Gestão para Segurança Pública) onde estou
             constantemente aprimorando minhas habilidades. Se quiser conhecer
             meus projetos ou discutir oportunidades de colaboração, fique à
             vontade para entrar em contato!
