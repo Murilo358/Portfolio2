@@ -25,10 +25,11 @@ const aboutMeSection = () => {
             Sou um desenvolvedor full stack com experiência em Java, Javascript
             e PHP, incluindo conhecimentos em PostgreSQL, Laravel, Spring Boot e
             React. Atualmente, estou cursando Análise e Desenvolvimento de
-            Sistemas na Universidade São Francisco. Estou constantemente
-            aprimorando minhas habilidades e explorando novos desafios. Se
-            quiser conhecer meus projetos ou discutir oportunidades de
-            colaboração, fique à vontade para entrar em contato!
+            Sistemas na Universidade São Francisco e empregado na Sentry
+            (Plataforma SaaS de Gestão para Segurança Pública) §onde estou
+            constantemente aprimorando minhas habilidades. Se quiser conhecer
+            meus projetos ou discutir oportunidades de colaboração, fique à
+            vontade para entrar em contato!
           </p>
           <a href={Curriculo} download>
             <button>
