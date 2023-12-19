@@ -160,14 +160,14 @@ const ProjectsSection = () => {
                 href="https://dream-stay.vercel.app"
                 target="_blank"
               >
-                <button disabled>Demo</button>
+                <button>Demo</button>
               </a>
               <a
                 rel="noreferrer"
                 href="https://github.com/Murilo358/DreamStay"
                 target="_blank"
               >
-                <button disabled>Repositório</button>
+                <button>Repositório</button>
               </a>
             </div>
           </div>
