@@ -3,16 +3,16 @@ import {
   SiReact,
   SiHtml5,
   SiCss3,
-  SiMysql,
   SiBootstrap,
   SiJavascript,
   SiGit,
   SiSass,
-  SiVite,
   SiPhp,
   SiLaravel,
   SiPostgresql,
   SiSpring,
+  SiSpringsecurity,
+  SiRabbitmq,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
@@ -28,10 +28,10 @@ const mainAbilities = () => {
           <SiBootstrap />
           <SiJavascript />
           <SiReact />
-          <SiVite />
           <DiJava />
           <SiSpring />
-          <SiMysql />
+          <SiSpringsecurity />
+          <SiRabbitmq />
           <SiPostgresql />
           <SiGit />
           <SiPhp />

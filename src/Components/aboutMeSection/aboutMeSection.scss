@@ -12,17 +12,21 @@
   font-family: var(--plus-jakarta-sans);
   color: var(--color-creamson);
   button {
+    margin-top: 15px;
+    padding: 10px 15px 10px 15px;
+    border: none;
     cursor: pointer;
-    border: 3px solid var(--color-creamson);
-    background-color: transparent;
-    padding: 15px;
-    margin-top: 10px;
-    font-size: 20px;
-    color: var(--color-creamson);
+    font-size: 25px;
+    color: #1d1d1d;
+    border-radius: 5px;
+    background-color: var(--color-creamson);
+    border: 1px solid var(--color-creamson);
+    -webkit-filter: drop-shadow(5px 5px 0 #000000b0)
+      drop-shadow(5px 10px 0 #000000b0);
+    filter: drop-shadow(5px 5px 0 #000000b0) drop-shadow(5px 10px 0 #000000b0);
   }
   button:hover {
     scale: 1.1;
-    color: #fff;
     transition: 0.3s;
   }
 }
