@@ -102,3 +102,41 @@
     transform: rotate(360deg);
   }
 }
+
+.flags-container {
+  display: flex;
+}
+
+.flag {
+  margin-bottom: 30px;
+  cursor: pointer;
+  width: 39px;
+  height: 39px;
+  filter: grayscale(1);
+}
+
+.flag:hover {
+  filter: grayscale(0.5);
+}
+
+.selected {
+  filter: grayscale(0);
+}
+
+.selected:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 850px) {
+  .flag {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .flag {
+    width: 30px;
+    height: 30px;
+  }
+}

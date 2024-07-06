@@ -4,7 +4,7 @@ import TaskMaster from "../../assets/TaskMaster.png";
 import Weather from "../../assets/Weather.png";
 import Dream from "../../assets/Dream-stay.png";
 
-import "./ProjectsSection.scss";
+import "./projectSection.scss";
 import { FaAws, FaJava } from "react-icons/fa6";
 import {
   SiReact,
@@ -27,11 +27,15 @@ import {
   SiPostgresql,
   SiRedis,
 } from "react-icons/si";
+import { Translator } from "../I18n";
 
 const ProjectsSection = () => {
   return (
     <div className="section  projects-section-container">
-      <h1 className="projects-section-container__h1">PROJETOS</h1>
+      <h1 className="projects-section-container__h1">
+        {" "}
+        <Translator path="projects.title" />
+      </h1>
       <div className="projects-section-content">
         <div className="projects-section-content-project">
           <img
@@ -44,8 +48,10 @@ const ProjectsSection = () => {
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h1>Xaus</h1>
-            <h4>Tecnologias usadas</h4>
+            <h1>
+              <Translator path="projects.xaus.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
               <div data-tooltip="Java">
                 <FaJava />
@@ -88,30 +94,31 @@ const ProjectsSection = () => {
               </div>
             </div>
             <p>
-              {" "}
-              O XAUS é um projeto full stack que fornece um painel intuitivo
-              baseado em admin panel para gerenciar todos os aspectos cruciais
-              de um negócio, desde a criação de pedidos até a administração de
-              usuários e permissões. Ele é construído com foco na segurança,
-              escalabilidade e facilidade de manutenção.
+              <Translator path="projects.xaus.description" />
             </p>
             <div className="projects-section-content-project__description-buttons ">
               <a rel="noreferrer" target="_blank" href="http://3.84.41.122/">
-                <button>Demonstração</button>
+                <button>
+                  <Translator path="projects.demo" />
+                </button>
               </a>
               <a
                 rel="noreferrer"
                 target="_blank"
                 href="https://github.com/Murilo358/XAUS-FRONT"
               >
-                <button>Frontend</button>
+                <button>
+                  <Translator path="projects.frontend" />
+                </button>
               </a>
               <a
                 rel="noreferrer"
                 target="_blank"
                 href="https://github.com/Murilo358/XAUS-BACKEND"
               >
-                <button>Backend</button>
+                <button>
+                  <Translator path="projects.backend" />
+                </button>
               </a>
             </div>
           </div>
@@ -122,8 +129,10 @@ const ProjectsSection = () => {
             data-aos="fade-right"
             data-aos-duration="800"
           >
-            <h1>Dream stay</h1>
-            <h4>Tecnologias usadas</h4>
+            <h1>
+              <Translator path="projects.dreamStay.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons">
               <div data-tooltip="HTML5">
                 <SiHtml5 />
@@ -154,11 +163,7 @@ const ProjectsSection = () => {
               </div>
             </div>
             <p>
-              O DreamStay é um website de viagens desenvolvido com a tecnologia
-              Next.js e conectado a um banco de dados Supabase que utiliza
-              PostgreSQL. Aqui, você pode comprar pacotes de viagem prontos,
-              pesquisar por destinos e até mesmo criar a sua própria viagem de
-              maneira simples e descomplicada.
+              <Translator path="projects.dreamStay.description" />
             </p>
             <div className="projects-section-content-project__description-buttons">
               <a
@@ -166,7 +171,9 @@ const ProjectsSection = () => {
                 href="https://dream-stay.vercel.app"
                 target="_blank"
               >
-                <button>Demonstração</button>
+                <button>
+                  <Translator path="projects.demo" />
+                </button>
               </a>
               <a
                 rel="noreferrer"
@@ -194,8 +201,11 @@ const ProjectsSection = () => {
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h1>Task master</h1>
-            <h4>Tecnologias usadas</h4>
+            <h1>
+              {" "}
+              <Translator path="projects.taskMaster.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons">
               <div data-tooltip="HTML5">
                 <SiHtml5 />
@@ -218,13 +228,7 @@ const ProjectsSection = () => {
               </div>
             </div>
             <p>
-              {" "}
-              Aproveite uma lista de tarefas completa desenvolvida com React,
-              que permite organizar suas atividades de forma fácil e prática
-              através de uma conta integrada ao Firebase. Com esta aplicação,
-              você terá a flexibilidade de classificar suas tarefas por data,
-              ordem alfabética, status de conclusão, proporcionando uma
-              organização ainda mais eficiente.
+              <Translator path="projects.taskMaster.description" />
             </p>
             <div className="projects-section-content-project__description-buttons">
               <a
@@ -232,7 +236,9 @@ const ProjectsSection = () => {
                 href="https://todolist-murilo358.vercel.app/"
                 target="_blank"
               >
-                <button>Demonstração</button>
+                <button>
+                  <Translator path="projects.demo" />
+                </button>
               </a>
               <a
                 rel="noreferrer"
@@ -250,8 +256,11 @@ const ProjectsSection = () => {
             data-aos="fade-left"
             data-aos-duration="800"
           >
-            <h1>World movies</h1>
-            <h4>Tecnologias usadas</h4>
+            <h1>
+              {" "}
+              <Translator path="projects.worldMovies.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
               <div data-tooltip="HTML5">
                 <SiHtml5 />
@@ -273,13 +282,7 @@ const ProjectsSection = () => {
               </div>
             </div>
             <p>
-              {" "}
-              O World Movies é um site construído utilizando a API do TMDB, onde
-              você pode criar sua lista de filmes para assistir, buscar por
-              filmes e conferir as últimas estreias. Com um design moderno e uma
-              interface fácil de usar, o World Movies oferece uma experiência de
-              navegação sem complicações para os amantes de cinema e entusiastas
-              de filmes.
+              <Translator path="projects.worldMovies.description" />
             </p>
             <div className="projects-section-content-project__description-buttons">
               <a
@@ -316,8 +319,11 @@ const ProjectsSection = () => {
             data-aos="fade-right"
             data-aos-duration="800"
           >
-            <h1>Weather app</h1>
-            <h4>Tecnologias usadas</h4>
+            <h1>
+              {" "}
+              <Translator path="projects.weatherApp.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
               <div data-tooltip="HTML5">
                 <SiHtml5 />
@@ -330,11 +336,7 @@ const ProjectsSection = () => {
               </div>
             </div>
             <p>
-              {" "}
-              O Weather App combina a precisão da API Open Weather com o design
-              neuromórfico. Tenha informações meteorológicas atualizadas em um
-              site com uma interface envolvente e estética tátil. Obtenha
-              previsões, temperatura, umidade e mais em um formato fácil de ler.
+              <Translator path="projects.weatherApp.description" />
             </p>
             <div className="projects-section-content-project__description-buttons">
               <a
@@ -342,7 +344,9 @@ const ProjectsSection = () => {
                 target="_blank"
                 href="https://murilo358.github.io/Weather/"
               >
-                <button>Demonstração</button>
+                <button>
+                  <Translator path="projects.demo" />
+                </button>
               </a>
               <a
                 rel="noreferrer"

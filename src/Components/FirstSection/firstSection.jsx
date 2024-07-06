@@ -2,6 +2,7 @@ import "./firstSection.scss";
 import { FaWhatsapp } from "react-icons/fa";
 import { ImGithub, ImLinkedin } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
+import Translator from "../I18n/Translator";
 function FirstSection() {
   return (
     <div className="first-section-container section">
@@ -11,21 +12,21 @@ function FirstSection() {
         className="first-section__h1"
       >
         {" "}
-        ME CHAMO
+        <Translator path="home.nameis" />
       </h1>
       <h1
         data-aos="fade-right"
         data-aos-duration="900"
         className="first-section__h1"
       >
-        MURILO BARBOSA
+        <Translator path="home.name" />
       </h1>
       <h5
         data-aos="fade-right"
         data-aos-duration="1100"
         className="first-section__h5"
       >
-        SOU UM DESENVOLVEDOR FULL STACK
+        <Translator path="home.developer" />
       </h5>
       <div className="first-section__socialmedia-icons">
         <a

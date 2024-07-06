@@ -15,11 +15,14 @@ import {
   SiRabbitmq,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
+import { Translator } from "../I18n";
 
-const mainAbilities = () => {
+const MainAbilities = () => {
   return (
     <div className="section  mainAbilities-section-container">
-      <h1> HABILIDADES</h1>
+      <h1>
+        <Translator path="skills.title" />
+      </h1>
       <div className="mainAbilities-section-container__align">
         <div className="mainAbilities-section-container__content">
           <SiHtml5 />
@@ -42,4 +45,4 @@ const mainAbilities = () => {
   );
 };
 
-export default mainAbilities;
+export default MainAbilities;

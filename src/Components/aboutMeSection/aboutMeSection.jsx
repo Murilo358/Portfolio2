@@ -1,8 +1,13 @@
 import "./aboutMeSection.scss";
-import Curriculo from "/Curriculo.pdf";
+import englishResume from "/Resume.pdf";
+import portugueseResume from "/Currículo.pdf";
 import pic1 from "../../assets/pic01.png";
 import { TfiDownload } from "react-icons/tfi";
-const aboutMeSection = () => {
+import { Translator } from "../I18n";
+import { useTranslation } from "react-i18next";
+const AboutMeSection = () => {
+  const { i18n } = useTranslation();
+
   return (
     <div className="section aboutme-section-container">
       <div className="aboutme-section-content">
@@ -18,22 +23,20 @@ const aboutMeSection = () => {
           data-aos-duration="800"
           className="aboutme-section-description"
         >
-          <h1>Sobre mim</h1>
+          <h1>
+            <Translator path="about.title" />
+          </h1>
           <p>
-            Hello world!
+            <Translator path="about.hello" />
             <br />
-            Sou um desenvolvedor full stack com experiência em Java, Javascript
-            e PHP, incluindo conhecimentos em PostgreSQL, Laravel, Spring Boot e
-            React. Atualmente, estou cursando Análise e Desenvolvimento de
-            Sistemas na Universidade São Francisco e empregado na Sentry
-            (Plataforma SaaS de Gestão para Segurança Pública) onde estou
-            constantemente aprimorando minhas habilidades. Se quiser conhecer
-            meus projetos ou discutir oportunidades de colaboração, fique à
-            vontade para entrar em contato!
+            <Translator path="about.text" />
           </p>
-          <a href={Curriculo} download>
+          <a
+            href={i18n.language == "pt-BR" ? portugueseResume : englishResume}
+            download
+          >
             <button>
-              Currículo <TfiDownload />
+              <Translator path="about.resume" /> <TfiDownload />
             </button>
           </a>
         </div>
@@ -42,4 +45,4 @@ const aboutMeSection = () => {
   );
 };
 
-export default aboutMeSection;
+export default AboutMeSection;

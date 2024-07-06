@@ -4,8 +4,11 @@ import contactImg from "../../assets/Contact.svg";
 import Footer from "../Footer/Footer";
 import Swal from "sweetalert2";
 import { ImSpinner8 } from "react-icons/im";
-function contactSection() {
+import { Translator } from "../I18n";
+import { useTranslation } from "react-i18next";
+function ContactSection() {
   const [loading, setLoading] = useState(false);
+  const { t } = useTranslation();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -45,8 +48,9 @@ function contactSection() {
 
   return (
     <div className="section  contact-section-container">
-      <h1>ENTRE EM CONTATO</h1>
-
+      <h1>
+        <Translator path="contact.title" />
+      </h1>
       <div className="contact-section-content">
         <img
           className="contact-section-content__image"
@@ -60,7 +64,7 @@ function contactSection() {
             id="name"
             name="name"
             className="emailForm"
-            placeholder="Nome"
+            placeholder={t("contact.name")}
             required
           />
           <input
@@ -68,7 +72,7 @@ function contactSection() {
             id="email"
             name="email"
             className="emailForm"
-            placeholder="E-mail"
+            placeholder={t("contact.email")}
             required
           />
           <input
@@ -76,14 +80,14 @@ function contactSection() {
             name="_subject"
             id="subject"
             className="emailForm"
-            placeholder="Assunto"
+            placeholder={t("contact.subject")}
             required
           />
           <textarea
             name="message"
             className="emailForm message"
             id="message"
-            placeholder="Mensagem"
+            placeholder={t("contact.message")}
             required
           ></textarea>
           <button id="submitButton" type="submit" className="Button">
@@ -93,7 +97,14 @@ function contactSection() {
               role="status"
               aria-hidden="true"
             ></span>
-            {loading ? <ImSpinner8 className="spin" /> : <span>ENVIAR</span>}
+            {loading ? (
+              <ImSpinner8 className="spin" />
+            ) : (
+              <span>
+                {" "}
+                <Translator path="contact.send" />
+              </span>
+            )}
           </button>
         </form>
       </div>
@@ -102,4 +113,4 @@ function contactSection() {
   );
 }
 
-export default contactSection;
+export default ContactSection;

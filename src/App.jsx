@@ -4,12 +4,14 @@ import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
 import "./index.css";
+import Header from "./Components/Header/Header";
 import Navbar from "./Components/Navbar/Navbar";
 import FirstSection from "./Components/FirstSection/firstSection";
-import MainAbilities from "./Components/mainAbilities/mainAbilities";
 import AboutMeSection from "./Components/aboutMeSection/aboutMeSection";
-import ProjectsSection from "./Components/ProjectsSection/ProjectsSection.jsx";
-import ContactsSection from "./Components/contactSection/contactSection";
+import MainAbilities from "./Components/mainAbilities/mainAbilities";
+import ProjectsSection from "./Components/ProjectsSection/projectSection";
+import ContactSection from "./Components/Contact/Contact";
+
 AOS.init();
 
 const anchors = ["Home", "AboutMe", "Abilities", "Projects", "ContactMe"];
@@ -41,6 +43,7 @@ const App = () => {
 
   return (
     <div>
+      <Header />
       <Navbar activeSection={activeSection} handleNavClick={handleNavClick} />
       <ReactFullpage
         anchors={anchors}
@@ -60,7 +63,7 @@ const App = () => {
                 <AboutMeSection />
                 <MainAbilities />
                 <ProjectsSection />
-                <ContactsSection />
+                <ContactSection />
               </div>
             </ReactFullpage.Wrapper>
           );
