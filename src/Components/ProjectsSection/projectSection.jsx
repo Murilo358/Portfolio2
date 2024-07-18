@@ -180,7 +180,9 @@ const ProjectsSection = () => {
                 href="https://github.com/Murilo358/DreamStay"
                 target="_blank"
               >
-                <button>Repositório</button>
+                <button>
+                  <Translator path="projects.repository" />
+                </button>
               </a>
             </div>
           </div>
