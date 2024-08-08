@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 70px;
+  padding-top: 50px;
 }
 .mainAbilities-section__icon:hover {
   scale: 1.2;
@@ -32,6 +33,18 @@
 
   .fp-overflow {
     height: 100vh;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.mainAbilities-skills-description {
+  text-align: center;
+  p {
+    font-weight: bold;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 40px !important;
   }
 }
 

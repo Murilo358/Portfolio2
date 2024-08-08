@@ -13,6 +13,31 @@ export default {
     },
     skills: {
       title: "SKILLS",
+      mouse_placement: "*Hover to learn more*",
+      Java: "Used daily in my current job and personal projects. I developed a management application (Xaus) using Java, integrating RESTful APIs, and performing performance optimizations.",
+      SpringBoot:
+        "Used to expose internal and external APIs, almost daily in my work and personal projects. I am currently developing an event-driven e-commerce application using Spring Boot.",
+      SpringSecurity:
+        "Implemented in personal projects and maintenance tasks at my current job to ensure application security. I configured JWT-based authentication and basic authorization.",
+      PostgreSQL:
+        "Used in my current job and personal projects. I optimized queries, modeled tables, and created indexes to improve database performance. I also participated in a database migration from SQL to PostgreSQL.",
+      JavaScript:
+        "I have experience with JavaScript both professionally and in personal projects. You can find more details about the projects I've completed below.",
+      React:
+        "Used in various personal projects. I have approximately six months of professional experience with React and other JavaScript frameworks, allowing me to create fully interactive interfaces.",
+      RabbitMQ:
+        "Used to manage notifications in my comprehensive management application (Xaus), ensuring that messages are delivered in distributed systems.",
+      Kafka:
+        "Used to create an event-driven architecture during development (still in progress), enabling the application to work completely asynchronously.",
+      Git: "Used daily in my job and personal projects. I have extensive experience with Git and version control.",
+      Bootstrap:
+        "Used in personal projects with brief professional experience. Competent in creating responsive layouts and reusable components.",
+      Sass: "Used in personal projects, including this portfolio. Experience in writing more efficient and organized CSS using Sass.",
+      PHP: "I have approximately six months of professional experience using PHP along with Laravel to create robust and efficient web applications.",
+      Laravel:
+        "I have approximately six months of professional experience, working with Laravel to create screens and perform database queries.",
+      Tailwind:
+        "Used in personal projects like my management application (Xaus).",
     },
     projects: {
       title: "PROJECTS",
