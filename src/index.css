@@ -51,42 +51,6 @@
   animation: rotate 1s linear infinite;
 }
 
-[data-tooltip] {
-  position: relative;
-  z-index: 2;
-
-  &::before {
-    position: absolute;
-    bottom: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 5px;
-    padding: 15px;
-    width: 160px;
-    border-radius: 3px;
-    background-color: hsla(0, 0%, 18%, 0.9);
-    color: #fff;
-    content: attr(data-tooltip);
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.2;
-    white-space: normal;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-  }
-
-  &:hover::before,
-  &:focus::before {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  &.tooltip-big::before {
-    width: 300px;
-  }
-}
-
 @keyframes rotate {
   0% {
     transform: rotate(0);

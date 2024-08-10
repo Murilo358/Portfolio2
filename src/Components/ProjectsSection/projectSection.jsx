@@ -28,6 +28,7 @@ import {
   SiRedis,
 } from "react-icons/si";
 import { Translator } from "../I18n";
+import { Tooltip } from "react-tippy";
 
 const ProjectsSection = () => {
   return (
@@ -53,45 +54,75 @@ const ProjectsSection = () => {
             </h1>
             <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
-              <div data-tooltip="Java">
-                <FaJava />
-              </div>
-              <div data-tooltip="Spring boot">
-                <SiSpring />
-              </div>
-              <div data-tooltip="Spring boot security">
-                <SiSpringsecurity />
-              </div>
-              <div data-tooltip="FlyWay">
-                <SiFlyway />
-              </div>
-              <div data-tooltip="Javascript">
-                <SiJavascript />
-              </div>
-              <div data-tooltip="React">
-                <SiReact />
-              </div>
-              <div data-tooltip="Material UI">
-                <SiMui />
-              </div>
-              <div data-tooltip="TailWind">
-                <SiTailwindcss />
-              </div>
-              <div data-tooltip="Postgresql">
-                <SiPostgresql />
-              </div>
-              <div data-tooltip="Supabase">
-                <SiSupabase />
-              </div>
-              <div data-tooltip="Amazon aws">
-                <FaAws />
-              </div>
-              <div data-tooltip="Redis">
-                <SiRedis />
-              </div>
-              <div data-tooltip="RabbitMq">
-                <SiRabbitmq />
-              </div>
+              <Tooltip title="Java" position="top" trigger="mouseenter">
+                <div>
+                  <FaJava />
+                </div>
+              </Tooltip>
+              <Tooltip title="Spring boot" position="top" trigger="mouseenter">
+                <div>
+                  <SiSpring />
+                </div>
+              </Tooltip>
+              <Tooltip
+                title="Spring boot security"
+                position="top"
+                trigger="mouseenter"
+              >
+                <div>
+                  <SiSpringsecurity />
+                </div>
+              </Tooltip>
+              <Tooltip title="FlyWay" position="top" trigger="mouseenter">
+                <div>
+                  <SiFlyway />
+                </div>
+              </Tooltip>
+              <Tooltip title="Javascript" position="top" trigger="mouseenter">
+                <div>
+                  <SiJavascript />
+                </div>
+              </Tooltip>
+              <Tooltip title="React" position="top" trigger="mouseenter">
+                <div>
+                  <SiReact />
+                </div>
+              </Tooltip>
+              <Tooltip title="Material UI" position="top" trigger="mouseenter">
+                <div>
+                  <SiMui />
+                </div>
+              </Tooltip>
+              <Tooltip title="TailWind" position="top" trigger="mouseenter">
+                <div>
+                  <SiTailwindcss />
+                </div>
+              </Tooltip>
+              <Tooltip title="Postgresql" position="top" trigger="mouseenter">
+                <div>
+                  <SiPostgresql />
+                </div>
+              </Tooltip>
+              <Tooltip title="Supabase" position="top" trigger="mouseenter">
+                <div>
+                  <SiSupabase />
+                </div>
+              </Tooltip>
+              <Tooltip title="Amazon aws" position="top" trigger="mouseenter">
+                <div>
+                  <FaAws />
+                </div>
+              </Tooltip>
+              <Tooltip title="Redis" position="top" trigger="mouseenter">
+                <div>
+                  <SiRedis />
+                </div>
+              </Tooltip>
+              <Tooltip title="RabbitMq" position="top" trigger="mouseenter">
+                <div>
+                  <SiRabbitmq />
+                </div>
+              </Tooltip>
             </div>
             <p>
               <Translator path="projects.xaus.description" />
@@ -134,33 +165,51 @@ const ProjectsSection = () => {
             </h1>
             <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons">
-              <div data-tooltip="HTML5">
-                <SiHtml5 />
-              </div>
-              <div data-tooltip="CSS">
-                <SiCss3 />
-              </div>
-              <div data-tooltip="React">
-                <SiReact />
-              </div>
-              <div data-tooltip="Typescript">
-                <SiTypescript />
-              </div>
-              <div data-tooltip="TailWind">
-                <SiTailwindcss />
-              </div>
-              <div data-tooltip="Prisma">
-                <SiPrisma />
-              </div>
-              <div data-tooltip="Supabase">
-                <SiSupabase />
-              </div>
-              <div data-tooltip="Next.js">
-                <SiNextdotjs />
-              </div>
-              <div data-tooltip="Git">
-                <SiGit />
-              </div>
+              <Tooltip title="HTML5" position="top" trigger="mouseenter">
+                <div>
+                  <SiHtml5 />
+                </div>
+              </Tooltip>
+              <Tooltip title="CSS" position="top" trigger="mouseenter">
+                <div>
+                  <SiCss3 />
+                </div>
+              </Tooltip>
+              <Tooltip title="React" position="top" trigger="mouseenter">
+                <div>
+                  <SiReact />
+                </div>
+              </Tooltip>
+              <Tooltip title="Typescript" position="top" trigger="mouseenter">
+                <div>
+                  <SiTypescript />
+                </div>
+              </Tooltip>
+              <Tooltip title="TailWind" position="top" trigger="mouseenter">
+                <div>
+                  <SiTailwindcss />
+                </div>
+              </Tooltip>
+              <Tooltip title="Prisma" position="top" trigger="mouseenter">
+                <div>
+                  <SiPrisma />
+                </div>
+              </Tooltip>
+              <Tooltip title="Supabase" position="top" trigger="mouseenter">
+                <div>
+                  <SiSupabase />
+                </div>
+              </Tooltip>
+              <Tooltip title="Next.js" position="top" trigger="mouseenter">
+                <div>
+                  <SiNextdotjs />
+                </div>
+              </Tooltip>
+              <Tooltip title="Git" position="top" trigger="mouseenter">
+                <div>
+                  <SiGit />
+                </div>
+              </Tooltip>
             </div>
             <p>
               <Translator path="projects.dreamStay.description" />
@@ -209,25 +258,37 @@ const ProjectsSection = () => {
             </h1>
             <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons">
-              <div data-tooltip="HTML5">
-                <SiHtml5 />
-              </div>
-              <div data-tooltip="CSS">
-                <SiCss3 />
-              </div>
-              <div data-tooltip="Javascript">
-                <SiJavascript />
-              </div>
-              <div data-tooltip="React">
-                <SiReact />
-              </div>
-              <div data-tooltip="Firebase">
-                <SiFirebase />
-              </div>
+              <Tooltip title="HTML5" position="top" trigger="mouseenter">
+                <div>
+                  <SiHtml5 />
+                </div>
+              </Tooltip>
+              <Tooltip title="CSS" position="top" trigger="mouseenter">
+                <div>
+                  <SiCss3 />
+                </div>
+              </Tooltip>
+              <Tooltip title="Javascript" position="top" trigger="mouseenter">
+                <div>
+                  <SiJavascript />
+                </div>
+              </Tooltip>
+              <Tooltip title="React" position="top" trigger="mouseenter">
+                <div>
+                  <SiReact />
+                </div>
+              </Tooltip>
+              <Tooltip title="Firebase" position="top" trigger="mouseenter">
+                <div>
+                  <SiFirebase />
+                </div>
+              </Tooltip>
 
-              <div data-tooltip="Git">
-                <SiGit />
-              </div>
+              <Tooltip title="Git" position="top" trigger="mouseenter">
+                <div>
+                  <SiGit />
+                </div>
+              </Tooltip>
             </div>
             <p>
               <Translator path="projects.taskMaster.description" />
@@ -264,24 +325,36 @@ const ProjectsSection = () => {
             </h1>
             <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
-              <div data-tooltip="HTML5">
-                <SiHtml5 />
-              </div>
-              <div data-tooltip="Css">
-                <SiCss3 />
-              </div>
-              <div data-tooltip="Javascript">
-                <SiJavascript />
-              </div>
-              <div data-tooltip="React">
-                <SiReact />
-              </div>
-              <div data-tooltip="Bootstrap">
-                <SiBootstrap />
-              </div>
-              <div data-tooltip="Git">
-                <SiGit />
-              </div>
+              <Tooltip title="HTML5" position="top" trigger="mouseenter">
+                <div>
+                  <SiHtml5 />
+                </div>
+              </Tooltip>
+              <Tooltip title="Css" position="top" trigger="mouseenter">
+                <div>
+                  <SiCss3 />
+                </div>
+              </Tooltip>
+              <Tooltip title="Javascript" position="top" trigger="mouseenter">
+                <div>
+                  <SiJavascript />
+                </div>
+              </Tooltip>
+              <Tooltip title="React" position="top" trigger="mouseenter">
+                <div>
+                  <SiReact />
+                </div>
+              </Tooltip>
+              <Tooltip title="Bootstrap" position="top" trigger="mouseenter">
+                <div>
+                  <SiBootstrap />
+                </div>
+              </Tooltip>
+              <Tooltip title="Git" position="top" trigger="mouseenter">
+                <div>
+                  <SiGit />
+                </div>
+              </Tooltip>
             </div>
             <p>
               <Translator path="projects.worldMovies.description" />
@@ -327,15 +400,21 @@ const ProjectsSection = () => {
             </h1>
             <Translator path="projects.subtitle" />
             <div className="projects-section-content-project__description-icons ">
-              <div data-tooltip="HTML5">
-                <SiHtml5 />
-              </div>
-              <div data-tooltip="CSS">
-                <SiCss3 />
-              </div>
-              <div data-tooltip="Javascript">
-                <SiJavascript />
-              </div>
+              <Tooltip title="HTML5" position="top" trigger="mouseenter">
+                <div>
+                  <SiHtml5 />
+                </div>
+              </Tooltip>
+              <Tooltip title="CSS" position="top" trigger="mouseenter">
+                <div>
+                  <SiCss3 />
+                </div>
+              </Tooltip>
+              <Tooltip title="Javascript" position="top" trigger="mouseenter">
+                <div>
+                  <SiJavascript />
+                </div>
+              </Tooltip>
             </div>
             <p>
               <Translator path="projects.weatherApp.description" />
