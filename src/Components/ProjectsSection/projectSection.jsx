@@ -1,8 +1,10 @@
 import WorldMovies from "../../assets/WorldMovies.png";
 import Xaus from "../../assets/Xaus.png";
+import WorkInProgress from "../../assets/WorkInProgress.png";
 import TaskMaster from "../../assets/TaskMaster.png";
-import Weather from "../../assets/Weather.png";
 import Dream from "../../assets/Dream-stay.png";
+import Avro from "../../assets/avro.png"
+import ConfigServer from "../../assets/configServer.png"
 
 import "./projectSection.scss";
 import { FaAws, FaJava } from "react-icons/fa6";
@@ -24,6 +26,7 @@ import {
   SiRabbitmq,
   SiFlyway,
   SiMui,
+  SiApachekafka,
   SiPostgresql,
   SiRedis,
 } from "react-icons/si";
@@ -38,7 +41,7 @@ const ProjectsSection = () => {
         <Translator path="projects.title" />
       </h1>
       <div className="projects-section-content">
-        <div className="projects-section-content-project">
+      <div className="projects-section-content-project">
           <img
             className="projects-section-content-project__image"
             src={Xaus}
@@ -153,8 +156,95 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
+        </div>  
+        <div className="projects-section-content-project">
+          <div
+            className="projects-section-content-project__description "
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <h1>
+              <Translator path="projects.eCommerce.title" />
+            </h1>
+            <Translator path="projects.subtitle" />
+            <div className="projects-section-content-project__description-icons ">
+              <Tooltip title="Java" position="top" trigger="mouseenter">
+                <div>
+                  <FaJava />
+                </div>
+              </Tooltip>
+              <Tooltip title="Spring boot" position="top" trigger="mouseenter">
+                <div>
+                  <SiSpring />
+                </div>
+              </Tooltip>
+              <Tooltip
+                title="Spring boot security"
+                position="top"
+                trigger="mouseenter"
+              >
+                <div>
+                  <SiSpringsecurity />
+                </div>
+              </Tooltip>
+              <Tooltip title="FlyWay" position="top" trigger="mouseenter">
+                <div>
+                  <SiFlyway />
+                </div>
+              </Tooltip>  
+              <Tooltip title="Postgresql" position="top" trigger="mouseenter">
+                <div>
+                  <SiPostgresql />
+                </div>
+              </Tooltip>
+              <Tooltip title="Supabase" position="top" trigger="mouseenter">
+                <div>
+                  <SiSupabase />
+                </div>
+              </Tooltip>
+              <Tooltip title="Kafka" position="top" trigger="mouseenter">
+                <div>
+                  <SiApachekafka />
+                </div>
+              </Tooltip>
+              <Tooltip title="Apache Avro" position="top" trigger="mouseenter">
+              <div>
+                <img src={Avro} width="50" height="40"/>
+              </div>
+              </Tooltip>
+              <Tooltip title="Spring config server" position="top" trigger="mouseenter">
+              <div>
+                <img src={ConfigServer} width="40" height="40"/>
+              </div>
+              </Tooltip>
+            </div>
+            <p>
+            <Translator path="projects.eCommerce.description" />
+            </p>
+            <div className="projects-section-content-project__description-buttons ">
+            <a
+                rel="noreferrer"
+                href="https://github.com/Murilo358/E-commerce"
+                target="_blank"
+              >
+                <button>
+                  <Translator path="projects.repository" />
+                </button>
+              </a>
+            </div>
+          </div>
+          <img
+            className="projects-section-content-project__image"
+            src={WorkInProgress}
+            alt=""
+          />
         </div>
         <div className="projects-section-content-project">
+        <img
+            className="projects-section-content-project__image"
+            src={Dream}
+            alt=""
+          />
           <div
             className="projects-section-content-project__description "
             data-aos="fade-right"
@@ -235,18 +325,9 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
-          <img
-            className="projects-section-content-project__image"
-            src={Dream}
-            alt=""
-          />
         </div>
         <div className="projects-section-content-project">
-          <img
-            className="projects-section-content-project__image"
-            src={TaskMaster}
-            alt=""
-          />
+
           <div
             className="projects-section-content-project__description "
             data-aos="fade-left"
@@ -312,8 +393,18 @@ const ProjectsSection = () => {
               </a>
             </div>
           </div>
+          <img
+            className="projects-section-content-project__image"
+            src={TaskMaster}
+            alt=""
+          />
         </div>
         <div className="projects-section-content-project">
+        <img
+            className="projects-section-content-project__image"
+            src={WorldMovies}
+            alt=""
+          />
           <div
             className="projects-section-content-project__description "
             data-aos="fade-left"
@@ -371,68 +462,6 @@ const ProjectsSection = () => {
                 rel="noreferrer"
                 target="_blank"
                 href="https://github.com/Murilo358/WorldMovies"
-              >
-                <button>Repositório</button>
-              </a>
-            </div>
-          </div>
-          <img
-            className="projects-section-content-project__image"
-            src={WorldMovies}
-            alt=""
-          />
-        </div>
-
-        <div className="projects-section-content-project">
-          <img
-            className="projects-section-content-project__image"
-            src={Weather}
-            alt=""
-          />
-          <div
-            className="projects-section-content-project__description "
-            data-aos="fade-right"
-            data-aos-duration="800"
-          >
-            <h1>
-              {" "}
-              <Translator path="projects.weatherApp.title" />
-            </h1>
-            <Translator path="projects.subtitle" />
-            <div className="projects-section-content-project__description-icons ">
-              <Tooltip title="HTML5" position="top" trigger="mouseenter">
-                <div>
-                  <SiHtml5 />
-                </div>
-              </Tooltip>
-              <Tooltip title="CSS" position="top" trigger="mouseenter">
-                <div>
-                  <SiCss3 />
-                </div>
-              </Tooltip>
-              <Tooltip title="Javascript" position="top" trigger="mouseenter">
-                <div>
-                  <SiJavascript />
-                </div>
-              </Tooltip>
-            </div>
-            <p>
-              <Translator path="projects.weatherApp.description" />
-            </p>
-            <div className="projects-section-content-project__description-buttons">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://murilo358.github.io/Weather/"
-              >
-                <button>
-                  <Translator path="projects.demo" />
-                </button>
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/Murilo358/Weather"
               >
                 <button>Repositório</button>
               </a>

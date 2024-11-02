@@ -8,12 +8,12 @@ export default {
     about: {
       title: "About Me",
       hello: "Hello world!",
-      text: "I am a full stack developer with experience in Java, Javascript, and PHP, including knowledge of PostgreSQL, Laravel, Spring Boot, and React. Currently, I am studying Systems Analysis and Development at Universidade São Francisco and employed at Sentry (a SaaS platform for Public Safety Management) where I am constantly improving my skills. If you would like to see my projects or discuss collaboration opportunities, feel free to get in touch!",
+      text: "I am a full stack developer with experience in Java, Spring Boot, PostgreSQL, and RabbitMQ, along with knowledge of JavaScript, PHP, Laravel and React. I have completed a degree in Systems Analysis and Development from Universidade São Francisco and am currently employed at Sentry (a SaaS platform for Public Safety Management), where I am constantly improving my skills. If you would like to see my projects or discuss collaboration opportunities, feel free to get in touch!",
       resume: "Resume",
     },
     skills: {
       title: "SKILLS",
-      mouse_placement: "*Hover to learn more*",
+      mousePlacement: "*Hover to learn more*",
       Java: "Used daily in my current job and personal projects. I developed a management application (Xaus) using Java, integrating RESTful APIs, and performing performance optimizations.",
       SpringBoot:
         "Used to expose internal and external APIs, almost daily in my work and personal projects. I am currently developing an event-driven e-commerce application using Spring Boot.",
@@ -46,6 +46,10 @@ export default {
       frontend: "FrontEnd",
       backend: "BackEnd",
       repository: "Repository",
+      eCommerce:{
+        title: "E-Commerce",
+        description: "An E-commerce platform is built with microservices in Java Spring Boot, using an event-driven architecture to keep everything in sync smoothly. With Apache Kafka managing the message flow and Confluent Schema Registry ensuring data consistency and compatibility, communication between services is reliable and robust. Each microservice is set up with the CQRS (Command Query Responsibility Segregation) pattern, using Axon Server to handle commands and queries separately. This design makes the system highly scalable and ready to grow, supporting high demand and large transaction volumes with ease."
+      },
       xaus: {
         title: "Xaus",
         description:

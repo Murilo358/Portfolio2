@@ -8,7 +8,7 @@ export default {
     about: {
       title: "Sobre mim",
       hello: "Hello world!",
-      text: "Sou um desenvolvedor full stack com experiência em Java, Javascript e PHP, incluindo conhecimentos em PostgreSQL, Laravel, Spring Boot e React. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Universidade São Francisco e empregado na Sentry (Plataforma SaaS de Gestão para Segurança Pública) onde estou constantemente aprimorando minhas habilidades. Se quiser conhecer meus projetos ou discutir oportunidades de colaboração, fique à vontade para entrar em contato!",
+      text: "Sou um desenvolvedor full stack com experiência em Java, Spring Boot, PostgreSQL e RabbitMQ, além de conhecimento em JavaScript, PHP, Laravel e React. Concluí a graduação em Análise e Desenvolvimento de Sistemas na Universidade São Francisco e atualmente trabalho na Sentry (uma plataforma SaaS para Gestão de Segurança Pública), onde estou constantemente aprimorando minhas habilidades. Se você gostaria de ver meus projetos ou discutir oportunidades de colaboração, fique à vontade para entrar em contato!",
       resume: "Currículo",
     },
     skills: {
@@ -46,6 +46,10 @@ export default {
       frontend: "FrontEnd",
       backend: "BackEnd",
       repository: "Repositório",
+      eCommerce:{
+        title: "E-Commerce",
+        description: "Um e-commerce desenvolvido utilizando microserviços em Java Spring Boot, seguindo uma arquitetura orientada a eventos para assegurar a comunicação entre eles. A comunicação é realizada via Apache Kafka, enquanto o Confluent Schema Registry garante a consistência e compatibilidade dos dados entre os serviços. Em cada microserviço, está implementado o padrão CQRS com o Axon Server, tornando o sistema altamente escalável e preparado para crescer com eficiência."
+      },
       xaus: {
         title: "Xaus",
         description:
