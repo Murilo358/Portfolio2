@@ -42,6 +42,7 @@
 .aboutme-section-content__image {
   animation: profile_animate 8s ease-in-out infinite 1s;
   box-shadow: 0 5px 10px #000;
+  width: 25%;
   height: 50%;
 }
 
@@ -60,7 +61,7 @@
 @media (max-width: 450px) {
   .aboutme-section-content__image {
     height: auto;
-    width: 100%;
+    width: 50%;
   }
 
   .aboutme-section-content {

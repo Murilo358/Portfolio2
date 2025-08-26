@@ -13,6 +13,7 @@ import {
   SiSpringsecurity,
   SiRabbitmq,
   SiApachekafka,
+  SiDocker,
 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 import { Translator } from "../I18n";
@@ -130,6 +131,18 @@ const MainAbilities = () => {
                 <div className=" mainAbilities-skills-description">
                   <SiApachekafka />
                   <p>Kafka</p>
+                </div>
+              </Tooltip>
+            </div>
+            <div>
+              <Tooltip
+                title={t("skills.Docker")}
+                position="top"
+                trigger="mouseenter"
+              >
+                <div className=" mainAbilities-skills-description">
+                  <SiDocker />
+                  <p>Docker</p>
                 </div>
               </Tooltip>
             </div>

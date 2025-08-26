@@ -3,12 +3,12 @@ export default {
     home: {
       nameis: "MY NAME IS",
       name: "MURILO BARBOSA",
-      developer: "I AM A FULL STACK DEVELOPER",
+      developer: "I AM A BACKEND DEVELOPER",
     },
     about: {
       title: "About Me",
       hello: "Hello world!",
-      text: "I am a full stack developer with experience in Java, Spring Boot, PostgreSQL, and RabbitMQ, along with knowledge of JavaScript, PHP, Laravel and React. I have completed a degree in Systems Analysis and Development from Universidade São Francisco and am currently employed at Sentry (a SaaS platform for Public Safety Management), where I am constantly improving my skills. If you would like to see my projects or discuss collaboration opportunities, feel free to get in touch!",
+      text: "I’m a backend developer with experience in Java, Spring Boot, PostgreSQL, RabbitMQ, and Kafka, as well as knowledge of AWS, Docker, and microservices. I also have background in JavaScript, PHP, Laravel, and React, which allows me to understand the full stack when needed. I graduated in Systems Analysis and Development at Universidade São Francisco and currently work at Sentry, a SaaS platform for Public Safety Management, where I’m constantly improving my technical skills. If you’d like to check out my projects or discuss collaboration opportunities, feel free to reach out!",
       resume: "Resume",
     },
     skills: {
@@ -29,6 +29,7 @@ export default {
         "Used to manage notifications in my comprehensive management application (Xaus), ensuring that messages are delivered in distributed systems.",
       Kafka:
         "Used to create an event-driven architecture during development (still in progress), enabling the application to work completely asynchronously.",
+      Docker: "Used to create isolated and standardized environments, making development, testing, and deployment of applications easier.",
       Git: "Used daily in my job and personal projects. I have extensive experience with Git and version control.",
       Bootstrap:
         "Used in personal projects with brief professional experience. Competent in creating responsive layouts and reusable components.",

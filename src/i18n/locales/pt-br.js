@@ -3,12 +3,12 @@ export default {
     home: {
       nameis: "ME CHAMO",
       name: "MURILO BARBOSA",
-      developer: "SOU UM DESENVOLVEDOR FULL STACK",
+      developer: "SOU UM DESENVOLVEDOR BACKEND",
     },
     about: {
       title: "Sobre mim",
       hello: "Hello world!",
-      text: "Sou um desenvolvedor full stack com experiência em Java, Spring Boot, PostgreSQL e RabbitMQ, além de conhecimento em JavaScript, PHP, Laravel e React. Concluí a graduação em Análise e Desenvolvimento de Sistemas na Universidade São Francisco e atualmente trabalho na Sentry (uma plataforma SaaS para Gestão de Segurança Pública), onde estou constantemente aprimorando minhas habilidades. Se você gostaria de ver meus projetos ou discutir oportunidades de colaboração, fique à vontade para entrar em contato!",
+      text: "Sou um desenvolvedor backend com experiência em Java, Spring Boot, PostgreSQL, RabbitMQ e Kafka, além de conhecimentos em AWS, Docker e microsserviços. Também tenho vivência com JavaScript, PHP, Laravel e React, o que me permite compreender o ecossistema full stack quando necessário. Concluí a graduação em Análise e Desenvolvimento de Sistemas na Universidade São Francisco e atualmente trabalho na Sentry, uma plataforma SaaS de Gestão de Segurança Pública, onde continuo aprimorando minhas habilidades técnicas. Se quiser conhecer meus projetos ou discutir possíveis colaborações, será um prazer conversar!",
       resume: "Currículo",
     },
     skills: {
@@ -29,6 +29,7 @@ export default {
         "Usado para gerenciar notificações na minha aplicação de gestão completa (Xaus). Podendo com que as mensagen sejma entregues em sistemas distribuídos.",
       Kafka:
         "Utilizado para criar uma arquitetura orientada a eventos durante o desenvolvimento (ainda em andamento). Assim fazendo com que a aplicação trabalhe totalmente de forma assíncrona.",
+      Docker: "Utilizado para criar ambientes isolados e padronizados, facilitando o desenvolvimento, testes e deploy das aplicações.",
       Git: "Utilizado diariamente em meu trabalho e em meus projetos pessoais. Tenho uma grande experiência com o git e controle de versão.",
       Bootstrap:
         "Utilizado em projetos pessoais e com breve experiência profissional. Competente em criar layouts responsivos e componentes reutilizáveis.",
@@ -81,7 +82,7 @@ export default {
       name: "Nome",
       email: "E-mail",
       subject: "Assunto",
-      message: "Mensagemos",
+      message: "Mensagem",
       send: "ENVIAR",
     },
     footer: {
